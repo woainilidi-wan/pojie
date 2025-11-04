@@ -4,7 +4,7 @@
 *******************************
 
 [rewrite_local]
-^https?:\/\/api\.boboxia\.cn\/game\/heartbeat\/mdcl\/c459\/mdgid\/160\/env\/prod url script-response-body https://raw.githubusercontent.com/woainilidi-wan/pojie/refs/heads/main/hua.js
+^https?:\/\/api\.boboxia\.cn\/game\/heartbeat\/mdcl\/c459\/mdgid\/160\/env\/prod url script-request-body https://raw.githubusercontent.com/woainilidi-wan/pojie/refs/heads/main/hua.js
 [mitm] 
 hostname = api.boboxia.cn
 
