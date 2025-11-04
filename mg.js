@@ -3,7 +3,7 @@
  *
 *******************************
 [rewrite_local]
-^https?:\/\/api-wood\.kaying\.cc\/rest\/user url script-response-body mg.js
+^https?:\/\/api-wood\.kaying\.cc\/rest\/user url script-response-body https://raw.githubusercontent.com/woainilidi-wan/pojie/refs/heads/main/mg.js
 [mitm] 
 hostname = api-wood.kaying.cc
 *
