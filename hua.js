@@ -12,8 +12,8 @@ hostname = api.babigame.cn
 *
 */
 
-var body = $request.body; 
-let obj = JSON.parse($request.body);
+var body = $response.body; 
+let obj = JSON.parse($response.body);
 obj = {
   "packageId" : "494",
   "_role_lvl" : 40,
