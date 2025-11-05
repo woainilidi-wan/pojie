@@ -19,7 +19,7 @@ obj = {
   "data" : {
     "id" : 58589,
     "uuid" : "MHBJFSXESJCEFJGINMVDTTYUU",
-    "vip" : 3,
+    "vip" : 1,
     "viptime" : "1999999999",
     "ispingjia" : 0,
     "area" : "",
