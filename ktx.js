@@ -21,9 +21,9 @@ obj = {
   "exp" : 0,
   "subscriptionVip" : {
     "userId" : 795001,
-    "beginTime" : 3999999999999,
+    "beginTime" : 1999999999999,
     "id" : 256145,
-    "endTime" : 3999999999999,
+    "endTime" : 1999999999999,
     "createTimeFormat" : "2099-11-12 16:15:13",
     "createTime" : 1762935313287,
     "isActive" : 1
