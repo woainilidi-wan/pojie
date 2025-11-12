@@ -13,13 +13,6 @@ hostname = ktx.cn
 */
 
 {
-  "rewrite": [
-    {
-      "matches": "^https?://ktx\\.cn/v3/api/my/home/get_home_center\\?ktxToken=[a-fA-F0-9]+",
-      "name": "KTX VIP 信息修改",
-      "script": {
-        "type": "response",
-        "body": `
           let obj = JSON.parse($response.body);
           
           // 修改 VIP 状态
@@ -31,13 +24,6 @@ hostname = ktx.cn
           
           // 修改用户等级
           obj.level = 5;
-          
-          // 修改优惠券数量
-          obj.couponCountUsed = 0;
-          obj.couponCountAboutToExpire = 5;
-          obj.askEditorCardCount = 3;
-          obj.feedbackCount = 0;
-          obj.waitPayOrder = 0;
           
           // 添加或修改 VIP 订阅信息
           const now = Date.now();
