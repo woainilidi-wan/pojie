@@ -14,22 +14,6 @@ hostname = ktx.cn
 
 var body = $request.body; 
 var obj = JSON.parse($request.body);
-obj = /*
- *
- *
-*******************************
-
-[rewrite_local]
-^https?:\/\/ktx\.cn\/v3\/api\/my\/home\/get_home_center?ktxToken=f6b4d59da988d43afb110fee5215a245 url script-response-body https://raw.githubusercontent.com/woainilidi-wan/pojie/refs/heads/main/ktx.js
-[mitm] 
-hostname = ktx.cn
-
-*
-*
-*/
-
-var body = $request.body; 
-var obj = JSON.parse($request.body);
 obj = {
   "couponCountUsed" : 2,
   "checkInStatus" : 0,
@@ -66,8 +50,5 @@ obj = {
     "pendantIconUrl" : null
   }
 }
-
-$done({body: JSON.stringify(obj)});
-
 
 $done({body: JSON.stringify(obj)});
