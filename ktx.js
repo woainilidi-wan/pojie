@@ -13,7 +13,23 @@ hostname = ktx.cn
 */
 
 var body = $request.body; 
-let obj = JSON.parse($request.body);
+var obj = JSON.parse($request.body);
+obj = /*
+ *
+ *
+*******************************
+
+[rewrite_local]
+^https?:\/\/ktx\.cn\/v3\/api\/my\/home\/get_home_center?ktxToken=f6b4d59da988d43afb110fee5215a245 url script-response-body https://raw.githubusercontent.com/woainilidi-wan/pojie/refs/heads/main/ktx.js
+[mitm] 
+hostname = ktx.cn
+
+*
+*
+*/
+
+var body = $request.body; 
+var obj = JSON.parse($request.body);
 obj = {
   "couponCountUsed" : 2,
   "checkInStatus" : 0,
@@ -21,10 +37,10 @@ obj = {
   "exp" : 0,
   "subscriptionVip" : {
     "userId" : 795001,
-    "beginTime" : 1999999999999,
+    "beginTime" : 1762935313287,
     "id" : 256145,
     "endTime" : 1999999999999,
-    "createTimeFormat" : "2099-11-12 16:15:13",
+    "createTimeFormat" : "2025-11-12 16:15:13",
     "createTime" : 1762935313287,
     "isActive" : 1
   },
@@ -50,5 +66,8 @@ obj = {
     "pendantIconUrl" : null
   }
 }
+
+$done({body: JSON.stringify(obj)});
+
 
 $done({body: JSON.stringify(obj)});
