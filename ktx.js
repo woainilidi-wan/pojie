@@ -16,7 +16,7 @@ let body = $response.body;
 let obj = JSON.parse(body);
 
 // 修改 VIP 状态
-obj.isVip = 1;
+obj.isVip = 0;
 
 // 修改订阅信息
 if (obj.subscriptionVip){
