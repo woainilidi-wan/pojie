@@ -19,19 +19,19 @@ let obj = JSON.parse(body);
 obj.isVip = 1;
 
 // 修改订阅信息
-obj.subscriptionVip = {
+if (obj.subscriptionVip){
+    obj.subscriptionVip.isActive = 1;
+    obj.subscriptionVip.enedTime = 4070880000000;
+}else{
+    ojb.subscriptionVip = {
     "userId": obj.user.id,
     "beginTime": 1762935313000,
     "id": 256145,
-    "endTime": 4070880000000, // 2099年
+    "enedTime": 4070880000000, // 2099年
     "createTimeFormat": "2025-11-12 16:15:13",
     "createTime": 1762935313000,
     "isActive": 1
-};
-
-// 修改其他信息
-obj.point = 9999; // 积分
-obj.level = 10; // 等级
-obj.exp = 8888; // 经验值
+    };
+}
 
 $done({body: JSON.stringify(obj)});
