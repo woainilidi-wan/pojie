@@ -15,7 +15,7 @@ hostname = ktx.cn
 {
   "rewrite": [
     {
-      "matches": "^https?://.*\\.(your-api-domain|example)\\.com/api/user/info", // 请替换为实际的 API 域名
+      "matches": "^https?://.*\\.(https://ktx.cn/v3/api/my/home/get_home_center?ktxToken=f6b4d59da988d43afb110fee5215a245)\\.com/api/user/info", // 请替换为实际的 API 域名
       "name": "VIP 信息修改",
       "script": {
         "type": "response",
