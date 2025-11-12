@@ -4,7 +4,7 @@
 *******************************
 
 [rewrite_local]
-^https?:\/\/ktx\.cn\/v3\/api\/my\/home\/get_home_center?ktxToken=f6b4d59da988d43afb110fee5215a245 url script-response-body https://raw.githubusercontent.com/woainilidi-wan/pojie/refs/heads/main/ktx.js
+^https?:\/\/ktx\.cn\/v3\/api\/my\/home\/get_home_center url script-response-body https://raw.githubusercontent.com/woainilidi-wan/pojie/refs/heads/main/ktx.js
 [mitm] 
 hostname = ktx.cn
 
