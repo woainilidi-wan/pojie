@@ -25,8 +25,8 @@ obj.data.can = {
 // 添加 VIP 特权
 obj.data.user_info.vip_info = {
   "is_vip": true,
-  "vip_end_time": "2026-12-31 23:59:59",
-  "have_days": 365
+  "vip_end_time": "1999999999,
+  "have_days": 36500,
 };
 
 // 升级用户角色
