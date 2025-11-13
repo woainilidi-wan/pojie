@@ -5,7 +5,6 @@
 
 [rewrite_local]
 ^https?:\/\/www\.wordvector\.com\/api\/ap\/en\/mine_index\/ url script-response-body https://raw.githubusercontent.com/woainilidi-wan/pojie/refs/heads/main/xldc.js
-^https?:\/\/www\.wordvector\.com\/api\/ap\/en\/log_come\/ url script-response-body https://raw.githubusercontent.com/woainilidi-wan/pojie/refs/heads/main/xldc.js
 [mitm] 
 hostname = www.wordvector.com
 
