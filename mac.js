@@ -20,13 +20,13 @@ if (obj.cmdID === "9002" && obj.msgType === 1 && obj.code === "9914") {
     // 修改用户信息
     if (obj.data) {
         // 修改用户名
-        obj.data.name = "修改后的用户名";
+        obj.data.name = "大帅哥";
         
         // 修改头像URL（可选）
         // obj.data.avatar = "https://new-avatar-url.com/avatar.png";
         
         // 修改其他字段
-        // obj.data.type = 1;
+        obj.data.type = 1;
     }
     
     // 确保成功状态
