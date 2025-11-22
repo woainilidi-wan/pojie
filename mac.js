@@ -26,7 +26,7 @@ if (obj.cmdID === "9002" && obj.msgType === 1 && obj.code === "9914") {
         // obj.data.avatar = "https://new-avatar-url.com/avatar.png";
         
         // 修改其他字段
-        obj.data.type = 2;
+        obj.data.type = 1;
     }
     
     // 确保成功状态
