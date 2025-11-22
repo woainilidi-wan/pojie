@@ -13,29 +13,24 @@ hostname = api2.microwear.com
 */
 
 
+// 通用用户信息修改
 let body = $response.body;
 let obj = JSON.parse(body);
 
-if (obj.cmdID === "9002" && obj.msgType === 1 && obj.code === "9914") {
-    // 修改用户信息
-    if (obj.data) {
-        // 修改用户名
-        obj.data.name = "大帅哥";
-        
-        // 修改头像URL（可选）
-        // obj.data.avatar = "https://new-avatar-url.com/avatar.png";
-        
-        // 修改其他字段
-        obj.data.type = 1;
-    }
-    
-    // 确保成功状态
-    obj.success = true;
-    obj.fail = false;
-    obj.messsage = "修改成功";
-    
-    // 重新序列化并返回
-    body = JSON.stringify(obj);
+if (obj.data) {
+  // 修改用户数据
+  obj.data = {
+    "email": "176340579030150@microwear.com",
+    "uid": 25765818, 
+    "name": "南安",
+    "type": 1,
+    "avatar": "http://download.microwear.com/imagesapp/176340579286323.png"
+  };
+  
+  // 确保其他必要字段
+  obj.success = true;
+  obj.fail = false;
+  obj.messsage = "请求成功";
 }
 
-$done({body});
+$done({body: JSON.stringify(obj)});
